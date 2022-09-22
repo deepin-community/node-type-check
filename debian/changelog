@@ -1,0 +1,62 @@
+node-type-check (0.4.0+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * Improve description
+  * Depends on newer pkg-js-tools avoiding to rebuild package.json
+    using % rules
+  * Reuse pkg-js-tools testing
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 04 Oct 2021 08:09:29 +0000
+
+node-type-check (0.4.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Drop depends on b-d.
+  * Fix test
+  * MA: foreign
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 03 Oct 2021 21:09:21 +0000
+
+node-type-check (0.4.0+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 0.4.0+dfsg
+  * Refresh patch
+  * Fix copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 25 Dec 2020 20:24:22 +0100
+
+node-type-check (0.3.2+dfsg-3) unstable; urgency=medium
+
+  * Team Upload.
+  * Replace old-style mocha test files (Closes: #952201)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 24 Feb 2020 10:38:06 +0100
+
+node-type-check (0.3.2+dfsg-2) unstable; urgency=medium
+
+  * Team Upload.
+  * Update "Depends"
+  * Switch to pkg-js-tools
+  * Enable upstream tests
+  * Drop compat, switch to debhelper-compat
+  * Add upstream/metadata
+  * Fix VCS URLs
+  * Add "Rules-Requires-Root: no"
+  * Fix Format URL
+  * Change section value to javascript
+  * Bump standards version to 4.5.0
+  * Use nodepath to find livescript, add patch description
+  * Add gbp.conf
+
+ -- Nilesh <npatra974@gmail.com>  Thu, 30 Jan 2020 20:39:46 +0530
+
+node-type-check (0.3.2+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #840411)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 12 Oct 2016 23:40:41 +0530

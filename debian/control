@@ -1,0 +1,29 @@
+Source: node-type-check
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , livescript
+ , mocha <!nocheck>
+ , node-prelude-ls <!nocheck>
+ , dh-sequence-nodejs (>= 0.9.71~)
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-type-check
+Vcs-Git: https://salsa.debian.org/js-team/node-type-check.git
+Homepage: https://github.com/gkz/type-check
+Rules-Requires-Root: no
+
+Package: node-type-check
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-prelude-ls
+Multi-Arch: foreign
+Description: Check the types of JavaScript values at runtime
+ This library allows one to run unit test using a Haskell like type
+ syntax using Node.js.
+ .
+ Node.js is an event-based server-side JavaScript engine.

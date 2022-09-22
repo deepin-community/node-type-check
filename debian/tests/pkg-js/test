@@ -1,0 +1,1 @@
+mocha --ui tdd --require livescript "test/*.ls"

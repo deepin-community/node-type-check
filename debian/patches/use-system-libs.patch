@@ -1,0 +1,21 @@
+Description: Use system libraries in Makefile
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2020-12-25
+
+--- a/Makefile
++++ b/Makefile
+@@ -3,10 +3,10 @@
+ SRC = $(shell find src -name "*.ls" -type f | sort)
+ LIB = $(SRC:src/%.ls=lib/%.js)
+ 
+-LS = node_modules/livescript
+-LSC = node_modules/.bin/lsc
++LS = $(shell nodepath livescript)
++LSC = /usr/bin/lsc
+ BROWSERIFY = node_modules/.bin/browserify
+-MOCHA = node_modules/.bin/mocha
++MOCHA = /usr/bin/mocha
+ 
+ package.json: package.json.ls
+ 	$(LSC) --compile package.json.ls
